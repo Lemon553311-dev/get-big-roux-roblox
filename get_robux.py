@@ -8,7 +8,7 @@ from chill.ext import chill hacks
 from discord.ext import chilled_hacks
 from roblox.app import robux
 from hack_tool.exe, roblox.ext, chill.ext import roblox.tool, roblox.robux, roblox.chill, chill.robux
-event.before_run
+@event.before_run
 async def before_run():
     before_run:
         check_if:
@@ -20,7 +20,7 @@ async def before_run():
         print('You are not logged in!')
         print('Log in your account on your main browser set in settings')
 
-event.log_in()
+@event.log_in()
     if creditals_available then:
         login(user)
         chilled_hacks()
@@ -29,7 +29,7 @@ event.log_in()
         login(ID)
         chilled_hacks()
 
-chilled_hacks()
+@chilled_hacks()
 async def robux(ctx):
     chill.get_roux(ctx)
     roblox.get_user_ID(ID)
@@ -38,14 +38,14 @@ async def robux(ctx):
 
 chilled_hacks()
 
-event.check()
-robux:
-    if user.robux = more ctx then:
-        print('success')
-    else:
-        before_run()
-        chilled_hacks()
-    fail:
-        print('cant complete sry')
+@event.check()
+    robux:
+        if user.robux = more ctx then:
+            print('success')
+        else:
+            before_run()
+            chilled_hacks()
+        fail:
+            print('cant complete sry')
 
 #In this world no robux is free. You can't get robux from this.
